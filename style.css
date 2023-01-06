@@ -9,6 +9,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
+/* Header */
+
 header {
     width: 100%;
     height: 100px;
@@ -39,13 +42,60 @@ header nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
+/* Trouvez votre hébergement pour des vacances de rêve */
+
 .informations {
     padding: 0px 50px;
 }
+
+.top h1 {
+    margin-bottom: 10px;
+}
+
+/* formulaire */
+
 .formulaire {
     display: flex;
     margin-top: 20px;
+   
 }
+
+.barre-rechercher {
+    width: 332px;
+    height: 48px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+.barre-rechercher i {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.barre-rechercher .input-city {
+    height: 48px;
+    border: none;
+    margin-left: 30px;
+    font-weight: bold ;
+    color: black;
+}
+
+input::placeholder {
+    color: black;
+    border: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
 
 .logo-rechercher {
     display: none;
@@ -60,35 +110,13 @@ header nav a:hover {
     align-items: center;
     width: 132px;
     justify-content: center;
-
 }
 
-
-.barre-rechercher i {
-    background-color: #F2F2F2;
-    width: 50px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    float: left;
-
-}
-
-.barre-rechercher {
-    width: 332px;
-    height: 48px;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.top h1 {
-    margin-bottom: 10px;
-}
+/*filtres */
 
 .filtres {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 75%;
     justify-content: space-between;
     align-items: center;
@@ -112,3 +140,82 @@ header nav a:hover {
 .filtres-item h3 {
     margin-left: 7px;
 }
+
+.logements {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-info {
+    border: #D9D9D9 solid 1px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logements p {
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.hebergements {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.resultats {
+    background-color: #F2F2F2;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.populaires {
+    background-color: blue;
+    flex: 1 1 auto;
+}
+
+/* Hebergements */
+
+.logement {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    margin: 30px;
+    padding: 5px;
+
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h2, p , .etoiles {
+    margin-left: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+
