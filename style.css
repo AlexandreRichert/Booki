@@ -17,7 +17,7 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 
@@ -45,7 +45,7 @@ header nav a:hover {
 /* Trouvez votre hébergement pour des vacances de rêve */
 
 .informations {
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 
 .top h1 {
@@ -166,19 +166,21 @@ input:focus::placeholder {
 
 .hebergements {
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 30px;
     display: flex;
+    justify-content: space-between;
 }
 
 .resultats {
     background-color: #F2F2F2;
-    width: 75%;
+    width: 65%;
     border-radius: 20px;
 }
 
 .populaires {
-    background-color: blue;
-    flex: 1 1 auto;
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 20px;
 }
 
 /* Hebergements */
@@ -187,6 +189,7 @@ input:focus::placeholder {
     width: 100%;
     height: 100px;
     object-fit: cover;
+    object-position: center;
     border-radius: 20px 20px 0 0;
     
 }
@@ -198,24 +201,100 @@ input:focus::placeholder {
 }
 
 .card {
-    width: 250px;
+    width: 240px;
     height: 200px;
     background: #FFFFFF;
     border-radius: 20px; 
-    margin: 30px;
+    margin: 20px 0 20px 20px;
     padding: 5px;
-
+    box-shadow: 2px 2px lightgray;
 }
 
-.card h2 {
+.card h2, .card-populaires h2 {
     font-weight: 700;
     font-size: 16px;
 }
 
-h2, p , .etoiles {
+.card h2, .card p, .card .etoiles {
     margin-left: 20px;
     padding: 5px;
     width: 100%;
 }
 
+.titre-résultats {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+
+.afficher-plus {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 50px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Les plus populaires */
+
+.titre-populaires {
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.cards-populaires a {
+    text-decoration: none;
+    color: black;
+}
+
+.logement-populaire {
+    width: 140px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+.cards-populaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-populaires {
+    width: 90%;
+    max-width: 340px;
+    height: 145px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    margin: 20px 0 20px 20px;
+    padding: 5px;
+    box-shadow: 2px 2px lightgray;
+    display: flex;
+}
+
+.contenu-populaires {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contenu-populaires p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 
