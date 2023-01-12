@@ -97,6 +97,8 @@ input:focus::placeholder {
     color: transparent;
   }
 
+  
+
 .logo-rechercher {
     display: none;
 }
@@ -194,7 +196,7 @@ input:focus::placeholder {
     
 }
 
-.cards {
+.all-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -215,7 +217,7 @@ input:focus::placeholder {
     font-size: 16px;
 }
 
-.card h2, .card p, .card .etoiles {
+.card h2, .card p, .card .stars {
     margin-left: 20px;
     padding: 5px;
     width: 100%;
@@ -236,7 +238,7 @@ input:focus::placeholder {
     padding: 20px 50px;
 }
 
-.cards a {
+.all-cards a {
     text-decoration: none;
     color: black;
 }
@@ -252,6 +254,63 @@ input:focus::placeholder {
     justify-content: space-around;
 }
 
+.all-cards-populaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.logement-populaire {
+    max-width: 140px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+.content-populaires {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 15px;
+}
+
+
+.card-populaires {
+    display: flex;
+    max-width: 345px;
+    width: 90%;
+    height: 145px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    margin: 20px 0 20px 20px;
+    padding: 5px;
+    box-shadow: 2px 2px lightgray;
+}
+
+
+
+.all-cards-populaires a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.content-populaires {
+    position: relative;
+}
+
+.price-populaires {
+    margin-top: 2px;
+}
+
+.content-populaires .stars {
+    position: absolute;
+    top: 85%;
+}
+/*
 .cards-populaires a {
     text-decoration: none;
     color: black;
@@ -303,6 +362,8 @@ input:focus::placeholder {
     text-decoration: none;
     color: black;
 }
+
+
 
 .container-activites {
     display: flex;
@@ -369,15 +430,15 @@ footer {
     margin-left: 30px;
 }
 
-.liste-card-footer {
+.list-card-footer {
     margin-top: 15px;
 }
 
-.liste-card-footer li {
+.list-card-footer li {
     margin-top: 10px;
     list-style: none;
 }
 
-.liste-card-footer ul {
+.list-card-footer ul {
     padding-left: 0;
 }
