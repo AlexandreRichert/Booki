@@ -7,17 +7,18 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
-/* Header */
+/* \\\\\\\Header///////// */
 
 header {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    padding: 30px;
 }
 
 
@@ -42,17 +43,18 @@ header nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
+.menu {
+    margin-right: 30px;
+}
+
 /* Trouvez votre hébergement pour des vacances de rêve */
 
-.informations {
-    padding: 0px 30px;
-}
 
 .top h1 {
     margin-bottom: 10px;
 }
 
-/* formulaire */
+/* \\\\\\\formulaire/////// */
 
 .formulaire {
     display: flex;
@@ -83,7 +85,7 @@ header nav a:hover {
 .barre-rechercher .input-city {
     height: 48px;
     border: none;
-    margin-left: 30px;
+    padding-left: 30px;
     font-weight: bold ;
     color: black;
 }
@@ -96,6 +98,10 @@ input::placeholder {
 input:focus::placeholder {
     color: transparent;
   }
+
+input:focus {
+    outline: none;
+}
 
   
 
@@ -114,15 +120,18 @@ input:focus::placeholder {
     justify-content: center;
 }
 
-/*filtres */
+/*\\\\\\\\\\\filtres//////////// */
 
 .filtres {
     display: flex;
     margin-top: 40px;
-    width: 75%;
-    justify-content: space-between;
+    width: 70%;
     align-items: center;
-    
+    justify-content: space-between;
+}
+
+.filtres:nth-child(4) {
+    white-space: nowrap;
 }
 
 .filtres-item {
@@ -132,7 +141,8 @@ input:focus::placeholder {
     align-items: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 14px;
+    padding: 8px;
+    margin-left: 10px;
 }
 
 .filtres-item:hover {
@@ -141,6 +151,7 @@ input:focus::placeholder {
 
 .filtres-item h3 {
     margin-left: 7px;
+    font-size: 17px;
 }
 
 .logements {
@@ -166,11 +177,14 @@ input:focus::placeholder {
     font-weight: 400;
 }
 
+/*\\\\\\\\\hebergements/////////// */
+
 .hebergements {
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
+    margin-left: -30px;
 }
 
 .resultats {
@@ -185,7 +199,6 @@ input:focus::placeholder {
     border-radius: 20px;
 }
 
-/* Hebergements */
 
 .logement {
     width: 100%;
@@ -196,10 +209,12 @@ input:focus::placeholder {
     
 }
 
+
 .all-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .card {
@@ -207,7 +222,7 @@ input:focus::placeholder {
     height: 200px;
     background: #FFFFFF;
     border-radius: 20px; 
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 20px 0px;
     padding: 5px;
     box-shadow: 2px 2px lightgray;
 }
@@ -243,8 +258,19 @@ input:focus::placeholder {
     color: black;
 }
 
+.stars i {
+    font-size: 12px;
+ }
+ .stars i:nth-child(-n+4) {
+     color: #0065FC;
+ }
+ 
+ .stars i:nth-child(n+5) {
+     color: #F2F2F2;
+ }
 
-/* Les plus populaires */
+
+/* \\\\\\Les plus populaires/////// */
 
 .titre-populaires {
     padding: 10px 0px 20px 0px;
@@ -257,12 +283,12 @@ input:focus::placeholder {
 .all-cards-populaires {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
 }
 
 .logement-populaire {
-    max-width: 140px;
+    width: 140px;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -285,7 +311,7 @@ input:focus::placeholder {
     height: 145px;
     background: #FFFFFF;
     border-radius: 20px; 
-    margin: 20px 0 20px 20px;
+    margin: 20px 8px 20px 8px;
     padding: 5px;
     box-shadow: 2px 2px lightgray;
 }
@@ -310,53 +336,9 @@ input:focus::placeholder {
     position: absolute;
     top: 85%;
 }
-/*
-.cards-populaires a {
-    text-decoration: none;
-    color: black;
-}
 
-.logement-populaire {
-    width: 140px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px 0 0 20px;
-    
-}
 
-.cards-populaires {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;
-    
-}
-
-.card-populaires {
-    width: 90%;
-    max-width: 340px;
-    height: 145px;
-    background: #FFFFFF;
-    border-radius: 20px; 
-    margin: 20px 0 20px 20px;
-    padding: 5px;
-    box-shadow: 2px 2px lightgray;
-    display: flex;
-}
-
-.contenu-populaires {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.contenu-populaires p {
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-/*  Activités   */
+/* \\\\\\\\ Activités ////////  */
 
 .container-activites a {
     text-decoration: none;
@@ -393,7 +375,7 @@ input:focus::placeholder {
 
 .activites {
     width: 100%;
-    padding: 50px 30px;
+    padding: 50px 30px 50px 0px;
 
 }
 
@@ -404,12 +386,12 @@ input:focus::placeholder {
     margin-left: 20px;
 }
 
-/* FOOTER */
+/* \\\\\\\\FOOTER////////// */
 
 footer {
-    padding: 40px 30px;
+    padding: 40px 0px;
     background-color: #F2F2F2;
-    margin: 30px;
+    margin-right: 30px;
 }
 
 .container-footer {
@@ -422,12 +404,11 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 250px;
-    margin-right: 90px;
+    width: 30%;
 }
 
 .container-footer:nth-child(1){
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
 .list-card-footer {
@@ -442,3 +423,53 @@ footer {
 .list-card-footer ul {
     padding-left: 0;
 }
+
+/* \\\\\\\Responsive medias queries////// */
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .hebergements {
+        display: block;
+        padding-left: 30px;
+    }
+
+    .resultats, .populaires {
+        width: 100%;
+    }
+
+    .all-cards-populaires {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .card-populaires {
+        max-width: 250px;
+    }
+
+    .child-activites {
+        height: 267px;
+    }
+
+    
+    .image-activites img {
+        height: 211px;
+    }
+
+    .title-populaires h2 {
+        font-size: 14px;
+    }
+
+    .logement-populaire {
+        width: 106px;
+    }
+
+    .price-populaires p {
+        font-size: 13px;
+    }
+
+    .titre-populaires {
+        justify-content: space-between;
+        padding: 30px 30px 0px 30px;
+    }
+}
+
+    
