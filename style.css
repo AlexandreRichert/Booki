@@ -52,6 +52,8 @@ header nav a:hover {
 
 .top h1 {
     margin-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
 /* \\\\\\\formulaire/////// */
@@ -63,7 +65,7 @@ header nav a:hover {
 }
 
 .barre-rechercher {
-    width: 332px;
+    width: 100px;
     height: 48px;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -123,6 +125,7 @@ input:focus {
     align-items: center;
     width: 132px;
     justify-content: center;
+    padding: 10px;
 }
 
 /*\\\\\\\\\\\filtres//////////// */
@@ -161,6 +164,11 @@ input:focus {
     font-size: 17px;
 }
 
+.filtres-logo i {
+    font-size: 22px;
+    color: #0065FC;
+}
+
 .logements {
     margin-top: 40px;
     display: flex;
@@ -179,6 +187,11 @@ input:focus {
 
 }
 
+.logo-info i {
+    font-size: 10px;
+    color: #0065FC;
+}
+
 .logements p {
     margin-left: 15px;
     font-weight: 400;
@@ -191,7 +204,6 @@ input:focus {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
-    margin-left: -30px;
 }
 
 .resultats {
@@ -246,11 +258,12 @@ input:focus {
 }
 
 .titre-résultats {
-    padding: 10px 50px;
     display: flex;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
+    padding-top: 20px;
+    justify-content: flex-start;
+    padding-left: 1em;
 }
 
 
@@ -280,11 +293,16 @@ input:focus {
 /* \\\\\\Les plus populaires/////// */
 
 .titre-populaires {
-    padding: 10px 0px 20px 0px;
+    padding: 20px;
     display: flex;
     margin-top: 20px;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.logo-populaires i {
+    font-size: 18px;
+    color: #0065FC;
 }
 
 .all-cards-populaires {
@@ -382,7 +400,7 @@ input:focus {
 
 .activites {
     width: 100%;
-    padding: 50px 30px 50px 0px;
+    padding: 50px 0px;
 
 }
 
@@ -398,7 +416,6 @@ input:focus {
 footer {
     padding: 40px 0px;
     background-color: #F2F2F2;
-    margin-right: 30px;
 }
 
 .container-footer {
@@ -436,7 +453,6 @@ footer {
 @media screen and (max-width: 991px) and (min-width: 768px) {
     .hebergements {
         display: block;
-        padding-left: 30px;
     }
 
     .filtres-item{
@@ -541,20 +557,23 @@ footer {
         font-size: 11px;
     }
 
+    .text-info {
+        margin-right: 15px;
+    }
+
     .hebergements {
         flex-direction: column;
     }
     .populaires {
         order: 1;
         width: 100%;
-        margin: 30px;
         border-radius: 0px;
     }
 
     .resultats {
         order: 2;
         width: 100%;
-        margin: 30px;
+        background-color: white;
     }
 
     .all-cards-populaires {
@@ -650,6 +669,11 @@ footer {
         display: none;
         
     }
+
+    .barre-rechercher form {
+        width: 55vw;
+    }
+    
 }
     
 

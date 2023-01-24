@@ -20,8 +20,8 @@
         </div>
         <nav>
             <div class="menu">
-                <a href="#hebergements">Hébergements</a>
-                <a href="#activites">Activités</a>
+                <a href="#section-hebergements">Hébergements</a>
+                <a href="#section-activites">Activités</a>
             </div>
         </nav>
     </header>
@@ -36,8 +36,10 @@
 
         <div class="formulaire">
             <div class="barre-rechercher">
-                <form action="" method="get">
+                <div class="logo-location">
                     <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <form action="#" method="get">
                     <label for="Lieu"></label><input type="text" class="input-city" placeholder="Marseille,France" required name="Lieu">
                 </form>
                 <div class="logo-rechercher">
@@ -53,26 +55,26 @@
             <h3>Filtres</h3>
             <div class="all-filtres">
                 <div class="filtres-item"> 
-                    <div class="filtres-logo">    
-                        <img src="images/Logo/Vector-4.png" alt="Economique">
+                    <div class="filtres-logo">   
+                        <i class="fa-solid fa-money-bill-wave"></i>  
                     </div>
                     <h3>Economique</h3>
                 </div>
                 <div class="filtres-item"> 
-                    <div class="filtres-logo">    
-                        <img src="images/Logo/Vector-3.png" alt="Familial">
+                    <div class="filtres-logo">   
+                        <i class="fa-solid fa-person"></i>
                     </div>
                     <h3>Familial</h3>
                 </div>
                 <div class="filtres-item"> 
-                    <div class="filtres-logo">    
-                        <img src="images/Logo/Vector-1.png" alt="Romantique">
+                    <div class="filtres-logo">   
+                        <i class="fa-solid fa-heart"></i>
                     </div>
                     <h3>Romantique</h3>
                 </div>
                 <div class="filtres-item"> 
                     <div class="filtres-logo">    
-                        <img src="images/Logo/Vector-2.png" alt="Animaux">
+                        <i class="fa-solid fa-dog"></i>
                     </div>
                     <h3>Animaux autorisés</h3>
                 </div>
@@ -81,7 +83,8 @@
 
         <div class="logements">
             <div class="logo-info">
-                <img src="images/Logo/Vector.png" alt="information logo">
+                <i class="fa-solid fa-info"></i> 
+
             </div>
             <div class="text-info">
                 <p>Plus de 500 logements sont disponibles dans cette ville </p>
@@ -91,8 +94,7 @@
 
     <!--Hebergements-->
         
-    <section class="hebergements">
-        <a name="hebergements"></a>
+    <section id="section-hebergements" class="hebergements">
         <div class="resultats">
             <div class="titre-résultats">
                 <h1>Hébergements à Marseille</h1>
@@ -198,7 +200,7 @@
                 <h1>Les plus populaires</h1>
                 </div>
                 <div class="logo-populaires">
-                    <img src="images/Logo/populaires.png" alt="">
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
             </div>
 
@@ -276,8 +278,7 @@
         
 
     </section>
-    <section class="activites">
-        <a name="activites"></a>
+    <section id="section-activites" class="activites">
         <h1>Activités à Marseille</h1>
         <div class="container-activites">
             <div class="child-activites">
