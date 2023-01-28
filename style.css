@@ -72,10 +72,6 @@ header nav a:hover {
     display: flex;
 }
 
-.barre-rechercher form {
-    display: flex;
-}
-
 
 .barre-rechercher i {
     background-color: #F2F2F2;
@@ -84,7 +80,6 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-    float: left;
     border-radius: 15px 0 0 15px;
 
 }
@@ -94,7 +89,6 @@ header nav a:hover {
     border: none;
     padding-left: 30px;
     font-weight: bold ;
-    color: black;
 }
 
 input::placeholder {
@@ -116,7 +110,7 @@ input:focus {
     display: none;
 }
 
-.Rechercher {
+.texte-rechercher {
     background-color: #0065FC;
     color: #FFFF;
     font-weight: 700;
@@ -139,13 +133,10 @@ input:focus {
 
 .all-filtres {
     display: flex;
-    width: 100%;
-    justify-content: flex-start;
 }
 
 .filtres-item {
     display: flex;
-    float: left;
     height: 50px;
     align-items: center;
     border: 2px solid #D9D9D9;
@@ -169,7 +160,7 @@ input:focus {
     color: #0065FC;
 }
 
-.logements {
+.nombre-logements {
     margin-top: 40px;
     display: flex;
     width: 100%;
@@ -192,21 +183,21 @@ input:focus {
     color: #0065FC;
 }
 
-.logements p {
+.nombre-logements p {
     margin-left: 15px;
     font-weight: 400;
 }
 
 /*\\\\\\\\\hebergements/////////// */
 
-.hebergements {
+.resultats {
     width: 100%;
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
 
-.resultats {
+.hebergements {
     background-color: #F2F2F2;
     width: 65%;
     border-radius: 20px;
@@ -216,6 +207,7 @@ input:focus {
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 20px;
+    height: 100%;
 }
 
 
@@ -257,7 +249,7 @@ input:focus {
     width: 100%;
 }
 
-.titre-résultats {
+.title-hebergements {
     display: flex;
     align-items: center;
     align-content: center;
@@ -292,12 +284,17 @@ input:focus {
 
 /* \\\\\\Les plus populaires/////// */
 
-.titre-populaires {
+.top-populaires {
     padding: 20px;
     display: flex;
     margin-top: 20px;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
+}
+
+.logo-populaires {
+    padding-top: 3px;
+    padding-left: 10px;
 }
 
 .logo-populaires i {
@@ -310,6 +307,8 @@ input:focus {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .logement-populaire {
@@ -450,16 +449,17 @@ footer {
 
 /* \\\\\\\Responsive medias queries////// */
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
-    .hebergements {
-        display: block;
-    }
-
+@media screen and (width < 992px) and (min-width: 768px) {
+    
     .filtres-item{
         margin-left: 15px;
     }
+    
+    .resultats {
+        display: block;
+    }
 
-    .resultats, .populaires {
+    .hebergements, .populaires {
         width: 100%;
     }
 
@@ -476,15 +476,6 @@ footer {
         max-width: 250px;
     }
 
-    .child-activites {
-        height: 267px;
-    }
-
-    
-    .image-activites img {
-        height: 211px;
-    }
-
     .title-populaires h2 {
         font-size: 14px;
     }
@@ -497,10 +488,20 @@ footer {
         font-size: 13px;
     }
 
-    .titre-populaires {
+    .top-populaires {
         justify-content: space-between;
         padding: 30px 30px 0px 30px;
     }
+
+    .child-activites {
+        height: 267px;
+    }
+
+    .image-activites img {
+        height: 211px;
+    }
+
+    
 }
 
 @media (width < 768px) {
@@ -561,7 +562,7 @@ footer {
         margin-right: 15px;
     }
 
-    .hebergements {
+    .resultats {
         flex-direction: column;
     }
     .populaires {
@@ -570,7 +571,7 @@ footer {
         border-radius: 0px;
     }
 
-    .resultats {
+    .hebergements {
         order: 2;
         width: 100%;
         background-color: white;
@@ -619,12 +620,6 @@ footer {
         margin-bottom: 40px;
     }
 
-    .child-activites a {
-        max-width: 340px;
-        width: 100%;
-        height: 190px;
-    }
-
     .image-activites img {
         height: 134px;
     }
@@ -665,7 +660,7 @@ footer {
         border-radius: 0px 15px 15px 0px;
     }
 
-    .Rechercher {
+    .texte-rechercher {
         display: none;
         
     }
