@@ -660,7 +660,7 @@ footer {
 
     .logo-rechercher {
         display: flex;
-        
+        border: none;
     }
 
     .logo-rechercher i {
@@ -675,7 +675,11 @@ footer {
     }
 
     .barre-rechercher form {
-        width: 55vw;
+        width: 300px;
+    }
+
+    .barre-rechercher input[type=text] {
+        width: 50vw;
     }
     
 }
