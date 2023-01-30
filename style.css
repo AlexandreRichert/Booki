@@ -59,7 +59,6 @@ header nav a:hover {
 /* \\\\\\\formulaire/////// */
 
 .formulaire {
-    display: flex;
     margin-top: 20px;
    
 }
@@ -67,10 +66,21 @@ header nav a:hover {
 .barre-rechercher {
     width: 100px;
     height: 48px;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
     display: flex;
 }
+
+.barre-rechercher form {
+    display: flex;
+}
+
+.texte-rechercher input[type=submit] {
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #0065FC;
+}
+
 
 
 .barre-rechercher i {
@@ -86,14 +96,13 @@ header nav a:hover {
 
 .barre-rechercher .input-city {
     height: 48px;
-    border: none;
+    border: 1px solid #F2F2F2;
     padding-left: 30px;
     font-weight: bold ;
 }
 
 input::placeholder {
     color: black;
-    border: none;
 }
 
 input:focus::placeholder {
