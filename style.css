@@ -54,6 +54,7 @@ header nav a:hover {
     margin-bottom: 10px;
     padding-right: 10px;
     margin-right: 10px;
+    font-size: 22px;
 }
 
 /* \\\\\\\form/////// */
@@ -143,7 +144,6 @@ input:focus {
 .filters h2 {
     font-size: 18px;
     font-weight: 700;
-    font-style: normal;
 }
 
 .all-filters {
@@ -200,7 +200,6 @@ input:focus {
 
 .available-housing p {
     margin-left: 15px;
-    font-weight: 400;
 }
 
 /*\\\\\\\\\accomodation/////////// */
@@ -258,6 +257,15 @@ input:focus {
     font-size: 16px;
 }
 
+.card p, .card-popular p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card span, .card-popular span {
+    font-weight: 600;
+}
+
 .card h3, .card p, .card .stars {
     margin-left: 20px;
     padding: 5px;
@@ -270,14 +278,16 @@ input:focus {
     align-content: center;
     padding-top: 20px;
     justify-content: flex-start;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 
 .show-more {
     display: flex;
     justify-content: flex-start;
-    padding: 20px 50px;
+    padding: 2em;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .all-cards a {
@@ -302,7 +312,6 @@ input:focus {
 .top-popular {
     padding: 20px;
     display: flex;
-    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -449,6 +458,11 @@ footer {
 
 .container-footer:nth-child(1){
     margin-left: 70px;
+}
+
+.title-card-footer h3 {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .list-card-footer {
