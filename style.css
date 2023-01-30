@@ -140,6 +140,12 @@ input:focus {
     align-items: center;
 }
 
+.filters h2 {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .all-filters {
     display: flex;
 }
@@ -247,12 +253,12 @@ input:focus {
     box-shadow: 2px 2px lightgray;
 }
 
-.card h2, .card-popular h2 {
+.card h3, .card-popular h3 {
     font-weight: 700;
     font-size: 16px;
 }
 
-.card h2, .card p, .card .stars {
+.card h3, .card p, .card .stars {
     margin-left: 20px;
     padding: 5px;
     width: 100%;
@@ -412,11 +418,13 @@ input:focus {
 
 }
 
-.child-activities h4 {
+.child-activities h3 {
     height: 56px;
     display: flex;
     align-items: center;
     margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /* \\\\\\\\FOOTER////////// */
@@ -485,7 +493,7 @@ footer {
         max-width: 250px;
     }
 
-    .title-popular h2 {
+    .title-popular h3 {
         font-size: 14px;
     }
 
@@ -546,7 +554,7 @@ footer {
         width: 100%;
     }
 
-    .filters h3 {
+    .filters h2 {
         display: flex;
         width: 100%;
         justify-content: flex-start;
@@ -554,7 +562,6 @@ footer {
 
     .all-filters {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .filters-item {
@@ -637,7 +644,7 @@ footer {
         padding: 50px 10px;
     }
 
-    .activities h1 {
+    .activities h2 {
         padding-left: 10px;
     }
 
