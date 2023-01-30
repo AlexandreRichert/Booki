@@ -131,20 +131,20 @@ input:focus {
     padding: 10px;
 }
 
-/*\\\\\\\\\\\filtres//////////// */
+/*\\\\\\\\\\\filters//////////// */
 
-.filtres {
+.filters {
     display: flex;
     margin-top: 40px;
     width: 70%;
     align-items: center;
 }
 
-.all-filtres {
+.all-filters {
     display: flex;
 }
 
-.filtres-item {
+.filters-item {
     display: flex;
     height: 50px;
     align-items: center;
@@ -155,21 +155,21 @@ input:focus {
     white-space: nowrap;
 }
 
-.filtres-item:hover {
+.filters-item:hover {
     background: #DEEBFF;
 }
 
-.filtres-item h3 {
+.filters-item h3 {
     margin-left: 7px;
     font-size: 17px;
 }
 
-.filtres-logo i {
+.filters-logo i {
     font-size: 22px;
     color: #0065FC;
 }
 
-.nombre-logements {
+.available-housing {
     margin-top: 40px;
     display: flex;
     width: 100%;
@@ -192,7 +192,7 @@ input:focus {
     color: #0065FC;
 }
 
-.nombre-logements p {
+.available-housing p {
     margin-left: 15px;
     font-weight: 400;
 }
@@ -460,7 +460,7 @@ footer {
 
 @media screen and (width < 992px) and (min-width: 768px) {
     
-    .filtres-item{
+    .filters-item{
         margin-left: 15px;
     }
     
@@ -541,29 +541,29 @@ footer {
         display: flex;
     }
 
-    .filtres {
+    .filters {
         flex-direction: column;
         width: 100%;
     }
 
-    .filtres h3 {
+    .filters h3 {
         display: flex;
         width: 100%;
         justify-content: flex-start;
     }
 
-    .all-filtres {
+    .all-filters {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .filtres-item {
+    .filters-item {
         margin: 10px;
         width: 40%;
         white-space: normal;
     }
 
-    .filtres-item h3 {
+    .filters-item h3 {
         font-size: 11px;
     }
 
